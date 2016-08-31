@@ -51,7 +51,7 @@ Merge the rows of the "train" and "test" data frames using rbind.
 
 ### Step 2.2: extracts only the measurements on the mean and standard deviation for each measurement
 
-The grep function is used to select features with names that include either '-mean()' or '-std()'. The subset of columns corresponding the the selected features, subjects, and activities are used to redefine the data frame df. Column names are also added in this substep.
+The grep function is used to select features with names that include either '-mean()' or '-std()'. The subset of columns corresponding the the selected features, subjects, and activities are used to redefine the data frame df. Column names are also added in this step.
 
 * select_feature_ind (*variable*): selected feature indices (names finishing in either '-mean()' or  '-std()')
 * select_df_ind (*variable*): selected data frame columns (recall 'subject', 'activity' are the first and second columns)
@@ -63,7 +63,7 @@ The 'activity' column of the data frame df is updated by converting original col
 ### Step 2.4: use appropriate labels the data set with descriptive variable names
 
 
-The gsub fucntion is used to update the names of the columns in order to reflect the following changes:
+The gsub function is used to update the names of the columns in order to reflect the following changes:
 1. replace prefix 't' with 'time_'
 2. replace prefix 'f' with 'frequency_'
 3. replace 'Body', 'BodyBody', ... with 'body_'
