@@ -64,6 +64,7 @@ The 'activity' column of the data frame df is updated by converting original col
 
 
 The gsub function is used to update the names of the columns in order to reflect the following changes:
+
 1. replace prefix 't' with 'time_'
 2. replace prefix 'f' with 'frequency_'
 3. replace 'Body', 'BodyBody', ... with 'body_'
